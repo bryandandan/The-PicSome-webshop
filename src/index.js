@@ -10,7 +10,7 @@ import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <ContextProvider>
-      <Router>
+      <Router basename="/calendar">
           <App />
       </Router>
   </ContextProvider>, 
