@@ -1,14 +1,19 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React from "react"
+import ReactDOM from "react-dom"
 import {BrowserRouter as Router} from "react-router-dom"
+
+import {ContextProvider} from "./Context"
+import App from "./App"
+
 import './index.css';
-import App from './App';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
-  <Router>
-      <App />
-  </Router>, 
+  <ContextProvider>
+      <Router>
+          <App />
+      </Router>
+  </ContextProvider>, 
   document.getElementById("root")
 )
 
